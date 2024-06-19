@@ -12,7 +12,7 @@ class SocialButton extends StatelessWidget {
     required this.label,
     this.horizontalPadding = 100, required MaterialColor color,
   }) : super(key: key);
-
+     
   @override
   Widget build(BuildContext context) {
     return TextButton.icon(

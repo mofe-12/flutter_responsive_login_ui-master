@@ -3,7 +3,7 @@ import 'package:flutter_responsive_login_ui/pallete.dart';
 
 class LoginField extends StatelessWidget {
   final String hintText;
-  const LoginField({
+  const LoginField({   
     Key? key,
     required this.hintText,
   }) : super(key: key);

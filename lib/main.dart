@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_responsive_login_ui/login_screen.dart';
 import 'package:flutter_responsive_login_ui/pallete.dart';
-
+  
 void main() {
   runApp(const MyApp());
 }
