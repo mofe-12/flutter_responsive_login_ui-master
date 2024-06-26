@@ -3,9 +3,12 @@ import 'package:flutter_responsive_login_ui/pallete.dart';
 
 class LoginField extends StatelessWidget {
   final String hintText;
-  const LoginField({   
+  final bool obscureText; // Add this parameter
+
+  const LoginField({
     Key? key,
     required this.hintText,
+    this.obscureText = false, // Default value set to false
   }) : super(key: key);
 
   @override
@@ -15,6 +18,7 @@ class LoginField extends StatelessWidget {
         maxWidth: 400,
       ),
       child: TextFormField(
+        obscureText: obscureText, // Use the parameter here
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.all(27),
           enabledBorder: OutlineInputBorder(
@@ -24,14 +28,7 @@ class LoginField extends StatelessWidget {
             ),
             borderRadius: BorderRadius.circular(10),
           ),
-          focusedBorder: OutlineInputBorder(
-            borderSide: const BorderSide(
-              color: Pallete.borderColor,
-              width: 3,
-            ),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          hintText: hintText,
+          hintText: hintText, // Add this line
         ),
       ),
     );
