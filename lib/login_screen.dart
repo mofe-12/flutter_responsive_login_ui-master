@@ -76,13 +76,12 @@ SizedBox(height: 20),
               ),
                
               SizedBox(height: 20),
-              SocialButton(iconPath: 'assets/svgs/g_logo.svg',
+              SocialButton(iconPath: 'assets/svgs/apple.svg',
                label: 'Continue with Apple',
                color: Colors.blue,
                horizontalPadding: 95,),
 
-           
-           
+
 
              ],
           ),
